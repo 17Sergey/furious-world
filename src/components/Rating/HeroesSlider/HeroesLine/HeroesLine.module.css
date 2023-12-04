@@ -1,0 +1,6 @@
+.line {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

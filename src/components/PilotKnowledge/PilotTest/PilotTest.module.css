@@ -1,0 +1,33 @@
+.test {
+    max-width: 570px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.btn {
+    max-width: 130px;
+    padding: 7px 43px;
+}
+
+.back {
+    color: #fff;
+    background-image:  url(../../../assets/back.svg);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: 15px 48%;
+    padding-left: 50px;
+}
+
+.back::before {
+
+}
+
+.next {
+
+}

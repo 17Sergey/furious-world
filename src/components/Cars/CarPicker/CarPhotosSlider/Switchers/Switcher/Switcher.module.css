@@ -1,0 +1,10 @@
+.switcher {
+    width: 40px;
+    height: 3px;
+    margin: 0 10px;
+}
+
+.for_padding {
+    padding: 10px 0;
+    cursor: pointer;
+}

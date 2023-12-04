@@ -1,0 +1,10 @@
+.hero_img {
+    border: 2px solid #000;
+    padding: 10px;  
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #000;
+}   

@@ -1,0 +1,24 @@
+.option {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    border-radius: 50%;
+    /* Default values */
+    border: 2px solid #6F08A9;
+    transition: all .2s ease-out;
+}
+
+.checkbox.active {
+    background-color: #6F08A9;
+}
+
+.value {
+    font-size: 20px;
+    margin-left: 12px;
+}

@@ -1,0 +1,43 @@
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Roboto+Condensed:wght@300;400;500;700;900&display=swap');
+
+/* Roboto Condensed Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700;900&display=swap');
+
+/* Antique Olive Std Nord Italic Font */
+@font-face {
+    font-family: "Antique Olive Std Nord Italic";
+    font-style: normal;
+    font-weight: 700;
+    src: url("https://db.onlinewebfonts.com/t/acaf3dad54b3abaa1edd1d8758c67c20.eot");
+    src: url("https://db.onlinewebfonts.com/t/acaf3dad54b3abaa1edd1d8758c67c20.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/acaf3dad54b3abaa1edd1d8758c67c20.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/acaf3dad54b3abaa1edd1d8758c67c20.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/acaf3dad54b3abaa1edd1d8758c67c20.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/acaf3dad54b3abaa1edd1d8758c67c20.svg#Antique Olive Std Nord Italic")format("svg");
+}
+
+/* TT Norms Regular Font */
+@font-face {
+    font-family: "TT Norms Regular";
+    src: url("https://db.onlinewebfonts.com/t/07bc241768c969f6b6a27a7bf0dfb490.eot");
+    src: url("https://db.onlinewebfonts.com/t/07bc241768c969f6b6a27a7bf0dfb490.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/07bc241768c969f6b6a27a7bf0dfb490.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/07bc241768c969f6b6a27a7bf0dfb490.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/07bc241768c969f6b6a27a7bf0dfb490.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/07bc241768c969f6b6a27a7bf0dfb490.svg#TT Norms Regular")format("svg");
+}
+
+
+.heading {
+    font-family: "Poppins";
+    font-weight: 900;
+    font-style: italic;
+    font-size: 54px;
+}
+
+body {
+    font-family: "Roboto Condensed";
+    font-size: 24px;
+    font-weight: 400;
+}

@@ -1,0 +1,28 @@
+.small {
+    width: 180px;
+    height: 230px;
+}
+
+.big {
+    width: 230px;
+    height: 280px;
+}
+
+.line_hero {
+    opacity: 0.6;
+}
+
+.line_hero.active {
+    opacity: 1;
+}
+
+.active .name {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.name {
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}

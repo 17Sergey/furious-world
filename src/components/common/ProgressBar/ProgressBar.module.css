@@ -1,0 +1,12 @@
+.colored_bar {
+    height: 110%;
+    border-radius: 20px;
+    position: relative;
+    top: -1px;
+    left: -2px;
+}
+
+.bar {
+    border: 1px solid #D4D4D4;
+    border-radius: 20px;
+}

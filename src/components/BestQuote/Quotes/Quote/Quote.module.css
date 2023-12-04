@@ -1,0 +1,10 @@
+.quote_item {
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.image img{
+    max-width: 700px;
+    /* height: 540px; */
+}

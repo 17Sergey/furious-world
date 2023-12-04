@@ -1,0 +1,6 @@
+.car_photo{
+    display: block;
+    max-width: 550px; 
+    /* by default */
+    border: 10px solid #6F08A9;
+}

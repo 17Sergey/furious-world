@@ -1,0 +1,22 @@
+.wrapper {
+    position: relative; 
+}
+
+.arrow {
+    fill: #000;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45%;
+}
+.left {
+    /* left: 15px; */
+    left: 0;
+    transform: rotate(90deg);
+}
+
+.right {
+    /* right: 15px; */
+    right: 0;
+    transform: rotate(-90deg);
+}

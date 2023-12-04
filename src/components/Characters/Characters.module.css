@@ -1,0 +1,28 @@
+.wrapper {
+    background-color: #6F08A9;
+    width: 100%;
+    position: relative;
+}
+
+.arrow {
+    fill: #fff;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+}
+.left {
+    left: 15px;
+    transform: rotate(90deg);
+}
+
+.right {
+    right: 15px;
+    transform: rotate(-90deg);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

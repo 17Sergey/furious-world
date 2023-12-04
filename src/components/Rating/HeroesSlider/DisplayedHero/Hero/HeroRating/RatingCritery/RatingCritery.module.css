@@ -1,0 +1,18 @@
+.rating_critery {
+    margin-bottom: 30px;
+}
+
+.rating_critery:last-child {
+    margin-bottom: 0;
+}
+
+.critery_heading {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+div.progressBar {
+    height: 20px;
+    border: 1px solid #000;
+}

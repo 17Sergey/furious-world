@@ -1,0 +1,23 @@
+.quote {
+    align-self: flex-start;
+    max-width: 500px;
+    background-color: #fff;
+    line-height: 140%;
+    padding: 55px 25px 50px 40px;
+    font-style: italic;
+    position: relative;
+    right: -50px;
+    top: -50px;
+}
+
+.quote span {
+    max-width: 415px;
+}
+
+.backticks img{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: -35px;
+    left: 10px;
+}

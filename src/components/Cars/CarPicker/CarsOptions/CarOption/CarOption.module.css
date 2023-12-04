@@ -1,0 +1,27 @@
+.car_option {
+    margin-top: 30px;
+    /* width: 315px; */
+    border: 3px solid #6F08A9;  
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.car_name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.active {
+    color: #fff;
+    font-size: 28px;
+    background-color: #6F08A9;
+    clip-path: polygon(23% 0, 100% 0%, 100% 100%, 0% 100%);
+    padding-left: 125px;
+    align-self: flex-start;
+    width: 555px;
+}
+
+.default {
+    color: #000;
+    background-color: #fff;
+}

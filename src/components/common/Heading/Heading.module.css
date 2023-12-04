@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: end;
+}
+
+.heading_stylized {
+    position: relative;
+}
+
+.heading {
+    /* default value */
+    margin-left: 45px;  
+    position: relative;
+    z-index: 2;
+}
+
+.shape {
+    position: absolute;
+    top: 16px;
+    left: 0;
+}
