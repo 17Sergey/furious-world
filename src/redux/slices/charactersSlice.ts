@@ -2,7 +2,13 @@ import { createSlice } from '@reduxjs/toolkit'
 
 
 export interface CharactersState {
-    notes: string[];
+    characters: CharacterType[];
+}
+
+export type CharacterType = {
+    id: number;
+    name: string;
+    photo: string;
 }
 
 type ActionType = { type: string, payload: string };
@@ -12,22 +18,23 @@ const charactersSlice = createSlice({
     initialState: {
         characters: [
             {
-                id: 1,
+                id: 0,
                 name: "Dominic Toretto",
-                photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Ramsey/Ramsey.webp",
+                photo: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Dominic.jpg?raw=true",
+                color: "#fed99b",   
             },
             {
-                id: 2,
+                id: 1,
                 name: "Brian O'Connor",
                 photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Ramsey/Ramsey.webp",
             },
             {
-                id: 3,
+                id: 2,
                 name: "Mia Toretto",
                 photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Ramsey/Ramsey.webp",
             },
             {
-                id: 4,
+                id: 3,
                 name: "Ramsey Rosewood",
                 photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Ramsey/Ramsey.webp",
             },

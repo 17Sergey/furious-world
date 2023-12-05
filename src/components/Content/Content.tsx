@@ -14,8 +14,8 @@ export const Content: React.FC = () => {
     return (
         <div>
             <Header />
-            {/* <Characters />
-            <PersonalFile />
+            <Characters />
+            {/* <PersonalFile />
             <Cars />
             <Rating />
             <BestQuote />

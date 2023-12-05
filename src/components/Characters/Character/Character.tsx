@@ -1,13 +1,18 @@
 import React from 'react';
 import styles from './Character.module.css';
-import ChatacterImg from '../../../assets/Ramsey.webp';
+// import ChatacterImg from '../../../assets/Ramsey/Ramsey.webp';
+import { CharacterType } from '../../../redux/slices/charactersSlice';
 
-export const Character: React.FC = () => {
+type CharacterProps = {
+    character: CharacterType;
+}
+
+export const Character: React.FC<CharacterProps> = ({ character }) => {
     return (
         <div className={styles.character}>
-            <h2 className={`heading + ${styles.heading}`}>Ramsey Rosewood</h2>
+            <h2 className={`heading + ${styles.heading}`}>{character.name}</h2>
             <img
-                src={ChatacterImg}
+                src={character.photo}
                 alt="Ramsey image"
                 className={styles.image}
             />
