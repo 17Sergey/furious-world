@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Arrow.module.css';
 import { SvgLoader, SvgProxy } from "react-svgmt";
 
-import ArrowImg from '../../../assets/arrow.svg';
+import ArrowImg from '../../../assets/common/arrow.svg';
 
 interface ArrowProps {
     className: string;

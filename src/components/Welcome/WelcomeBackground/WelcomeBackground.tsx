@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './WelcomeBackground.module.css';
 
-import Background from '../../../assets/WelcomeBackground2.png';
+import Background from '../../../assets/welcome/WelcomeBackground2.png';
 
 export const WelcomeBackground: React.FC = () => {
     return (

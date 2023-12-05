@@ -12,11 +12,26 @@ const charactersSlice = createSlice({
     initialState: {
         characters: [
             {
-                id: 5,
-                fullName: "Ramsey Rosewood",
-                portraitPhoto: 
-            }
-        ]
+                id: 1,
+                name: "Dominic Toretto",
+                photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Ramsey/Ramsey.webp",
+            },
+            {
+                id: 2,
+                name: "Brian O'Connor",
+                photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Ramsey/Ramsey.webp",
+            },
+            {
+                id: 3,
+                name: "Mia Toretto",
+                photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Ramsey/Ramsey.webp",
+            },
+            {
+                id: 4,
+                name: "Ramsey Rosewood",
+                photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Ramsey/Ramsey.webp",
+            },
+        ],
     },
     reducers: {
         // addNote: (state: CharactersState, action: ActionType) => {

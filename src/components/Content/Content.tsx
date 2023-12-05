@@ -14,13 +14,13 @@ export const Content: React.FC = () => {
     return (
         <div>
             <Header />
-            <Characters />
+            {/* <Characters />
             <PersonalFile />
             <Cars />
             <Rating />
             <BestQuote />
             <PilotKnowledge />
-            <Congratulations />
+            <Congratulations /> */}
         </div>
     );
 }
