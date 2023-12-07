@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 
 export interface CharactersState {
-    characters: CharacterType[];
+    characters: Array<CharacterType>;
 }
 
 export type CharacterType = {
@@ -34,6 +34,11 @@ const charactersSlice = createSlice({
                 id: 3,
                 name: "Ramsey Rosewood",
                 photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Ramsey/Ramsey.webp",
+            },
+            {
+                id: 4,
+                name: "Tej Parker",
+                photo: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Tej/Tej.jpg?raw=true",
             },
         ],
     },

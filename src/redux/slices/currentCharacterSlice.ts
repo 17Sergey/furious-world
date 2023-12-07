@@ -21,6 +21,11 @@ const characters = [
         name: "Ramsey Rosewood",
         color: "#6F08A9",
     },
+    {
+        id: 4,
+        name: "Tej Parker",
+        color: "#53a558",
+    },
 ];
 
 export interface CurrentCharacterState {

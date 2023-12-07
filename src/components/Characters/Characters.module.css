@@ -3,6 +3,7 @@
     width: 100%;
     position: relative;
     padding-bottom: 15px;
+    transition: all .3s ease-out;
 }
 
 .arrow {
