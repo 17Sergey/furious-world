@@ -4,7 +4,7 @@ import currentCharacterReducer from './slices/currentCharacterSlice';
 
 const rootReducer = combineReducers({
     currentCharacter: currentCharacterReducer,
-    characters: charactersReducer,
+    charactersScreen: charactersReducer,
 })
 
 export const store = configureStore({

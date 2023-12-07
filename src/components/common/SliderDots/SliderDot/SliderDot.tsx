@@ -2,11 +2,13 @@ import React from 'react';
 import styles from './SliderDot.module.css';
 
 type SliderDotProps = {
-    active?: boolean;
+    // key: number;
+    isActive: boolean;
+    // onClick: () => void;
 }
 
-export const SliderDot: React.FC<SliderDotProps> = ({ active = false }) => {
+export const SliderDot: React.FC<SliderDotProps> = ({ isActive, onClick }) => {
     return (
-        <div className={active ? styles.dot + " " + styles.active : styles.dot}></div>
+        <div className={isActive ? styles.dot + " " + styles.active : styles.dot} onClick={onClick}></div>
     );
 }

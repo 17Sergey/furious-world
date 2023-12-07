@@ -1,25 +1,54 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
+const characters = [
+    {
+        id: 0,
+        name: "Dominic Toretto",
+        color: "#d55f3d",   
+    },
+    {
+        id: 1,
+        name: "Brian O'Connor",
+        color: "#208aff",
+    },
+    {
+        id: 2,
+        name: "Mia Toretto",
+        color: "#da4ea5",
+    },
+    {
+        id: 3,
+        name: "Ramsey Rosewood",
+        color: "#6F08A9",
+    },
+];
 
 export interface CurrentCharacterState {
     currentCharacterId: number;
+    color: string;
 }
 
-type ActionType = { type: string, payload: string };
 
 const currentCharacterSlice = createSlice({
     name: "currentCharacter",
     initialState: {
         currentCharacterId: 0,
-        color: "#6F08A9",
+        color: "#d55f3d",
     },
     reducers: {
-        // addNote: (state: CurrentCharacterState, action: ActionType) => {
-        //     state.notes.push(action.payload);
-        // }
+        setCurrentCharacter: (state: CurrentCharacterState, action : PayloadAction<number>) => {
+
+            // Validation for index switching
+            let index = action.payload;
+            if (index > characters.length - 1) index =  0;   
+            if (index < 0) index = characters.length - 1;   
+
+            state.currentCharacterId = characters[index].id;
+            state.color = characters[index].color;
+        }
     }
 })
 
-// export const { addNote } = charactersSlice.actions;
+export const { setCurrentCharacter } = currentCharacterSlice.actions;
 
 export default currentCharacterSlice.reducer;
