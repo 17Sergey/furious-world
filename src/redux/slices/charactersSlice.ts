@@ -48,4 +48,6 @@ const charactersSlice = createSlice({
 
 export const {   } = charactersSlice.actions;
 
-export default charactersSlice.reducer;
+const charactersReducer = charactersSlice.reducer;
+
+export default charactersReducer;

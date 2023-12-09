@@ -4,10 +4,14 @@ import styles from './PersonalPhoto.module.css'
 
 import CharacterImg from '../../../../assets/Ramsey/PersonalFileRamsey.jpg';
 
-export const PersonalPhoto: React.FC = () => {
+type PersonalPhotoProps = {
+    photo: string;
+}
+
+export const PersonalPhoto: React.FC<PersonalPhotoProps> = ({ photo }) => {
     return (
         <div className="photo">
-            <img src={CharacterImg} alt="character's image" />
+            <img src={photo} alt="character's image" />
         </div>
     );
 }

@@ -2,13 +2,18 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 
 export interface CharactersState {
-    characters: Array<CharacterType>;
+    characters: Array<CharacterInfoType>;
 }
 
-export type CharacterType = {
-    id: number;
-    name: string;
-    photo: string;
+export type CharacterInfoType = {
+    id: number,
+    fullName: string,
+    age: number,
+    nationality: string,
+    bestSkills: string,
+    maritalStatus: string,
+    description: string,
+    photo: string,
 }
 
 const personalFileSlice = createSlice({
@@ -17,8 +22,13 @@ const personalFileSlice = createSlice({
         characters: [
             {
                 id: 0,
-                fullName: "Dominic Toretto",
-                photo: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Dominic.jpg?raw=true",
+                fullName: "Dominic Toretto(Dom)",
+                age: 2023-1976,
+                nationality: "American",
+                bestSkills: "Driving & leadership",
+                maritalStatus: "Married with Letty Ortiz",
+                description: "Heart-pounding action as a group of teenagers led by Tony Toretto, following in the footsteps of his cousin Dom, are recruited by a government agency to infiltrate an elite racing league serving as a front for a nefarious crime organization. With their slick cars and an array of gadgets and spy gear, this hip group will race to save the world from destruction.",
+                photo: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/PersonalFileDominic.jpg?raw=true",
             },
             {
                 id: 1,
@@ -48,4 +58,6 @@ const personalFileSlice = createSlice({
 
 export const {   } = personalFileSlice.actions;
 
-export default personalFileSlice.reducer;
+const personalFileReducer = personalFileSlice.reducer;
+
+export default personalFileReducer;

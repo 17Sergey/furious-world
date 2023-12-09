@@ -56,4 +56,6 @@ const currentCharacterSlice = createSlice({
 
 export const { setCurrentCharacter } = currentCharacterSlice.actions;
 
-export default currentCharacterSlice.reducer;
+const currentCharacterReducer = currentCharacterSlice.reducer;
+
+export default currentCharacterReducer;
