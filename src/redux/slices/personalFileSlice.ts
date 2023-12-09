@@ -19,7 +19,7 @@ export type CharacterInfoType = {
 const personalFileSlice = createSlice({
     name: "personalFileScreen",
     initialState: {
-        characters: [
+        characters: new Array<CharacterInfoType>(
             {
                 id: 0,
                 fullName: "Dominic Toretto(Dom)",
@@ -28,12 +28,17 @@ const personalFileSlice = createSlice({
                 bestSkills: "Driving & leadership",
                 maritalStatus: "Married with Letty Ortiz",
                 description: "Heart-pounding action as a group of teenagers led by Tony Toretto, following in the footsteps of his cousin Dom, are recruited by a government agency to infiltrate an elite racing league serving as a front for a nefarious crime organization. With their slick cars and an array of gadgets and spy gear, this hip group will race to save the world from destruction.",
-                photo: "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Dominic/PersonalFileDominic.webp",
+                photo: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/PersonalFileDominic.jpg?raw=true",
             },
             {
                 id: 1,
-                name: "Brian O'Connor",
-                photo: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Brian/Brian.jpg?raw=true",
+                fullName: "Brian O'Connor",
+                age: 2023-1978,
+                nationality: "American",
+                bestSkills: "Former FBI officer, driving, leadership",
+                maritalStatus: "Married with Mia Toretto",
+                description: "Heart-pounding action as a group of teenagers led by Tony Toretto, following in the footsteps of his cousin Dom, are recruited by a government agency to infiltrate an elite racing league serving as a front for a nefarious crime organization. With their slick cars and an array of gadgets and spy gear, this hip group will race to save the world from destruction.",
+                photo: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/PersonalFileDominic.jpg?raw=true",
             },
             {
                 id: 2,
@@ -50,7 +55,7 @@ const personalFileSlice = createSlice({
                 name: "Tej Parker",
                 photo: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Tej/Tej.jpg?raw=true",
             },
-        ],
+        ),
     },
     reducers: {
     }
