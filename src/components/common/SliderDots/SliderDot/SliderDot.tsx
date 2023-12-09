@@ -9,8 +9,6 @@ type SliderDotProps = {
 
 export const SliderDot: React.FC<SliderDotProps> = ({ isActive, onClick }) => {
     return (
-        // <div className={styles.link}>    
-            <div className={isActive ? styles.dot + " " + styles.active : styles.dot} onClick={onClick}></div>
-        // </div>
+        <div className={isActive ? styles.dot + " " + styles.active : styles.dot} onClick={onClick}></div>
     );
 }

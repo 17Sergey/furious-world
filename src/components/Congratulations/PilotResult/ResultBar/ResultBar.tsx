@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './ResultBar.module.css';
 import { ProgressBar } from '../../../common/ProgressBar/ProgressBar';
 
-import FireWork from '../../../../assets/Firework.svg';
+import FireWork from '../../../../assets/common/Firework.svg';
 
 type ResultBarProps = {
     value: number;

@@ -1,7 +1,9 @@
 import React from 'react';
 
+import { useAppSelector } from '../../../redux/hooks/hooks';
+
 import styles from './Heading.module.css';
-import Shape from '../../../assets/HeadingShape.svg';
+import Shape from '../../../assets/common/HeadingShape.svg';
 
 import { SvgLoader, SvgProxy } from "react-svgmt";
 
@@ -9,7 +11,6 @@ type HeadingProps = {
     value: string;
     className?: string;
     type?: string;
-    shapeColor?: string;
 }
 
 const findJustify = (type: string): string => {
@@ -29,7 +30,9 @@ const findJustify = (type: string): string => {
     }
 }
 
-export const Heading: React.FC<HeadingProps> = ({ value, className = "", type = "left", shapeColor = "#6F08A9" }) => {
+export const Heading: React.FC<HeadingProps> = ({ value, className = "", type = "left" }) => {
+
+    const { color: shapeColor } = useAppSelector(state => state.currentCharacter);
 
     const justifyContentValue = findJustify(type);
     

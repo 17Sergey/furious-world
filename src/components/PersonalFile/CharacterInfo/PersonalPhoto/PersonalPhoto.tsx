@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './PersonalPhoto.module.css'
 
-import CharacterImg from '../../../../assets/PersonalFileRamsey.jpg';
+import CharacterImg from '../../../../assets/Ramsey/PersonalFileRamsey.jpg';
 
 export const PersonalPhoto: React.FC = () => {
     return (

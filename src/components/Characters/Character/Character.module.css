@@ -10,9 +10,7 @@
 }
 
 .image {
-    max-width: 900px;
-    /* height: 500px; */
     max-width: 500px;
-    height: 570px;   
+    max-height: 570px;   
     margin-bottom: 10px;
 }

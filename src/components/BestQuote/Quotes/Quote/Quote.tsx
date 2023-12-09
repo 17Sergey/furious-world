@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './Quote.module.css';
 import { QuoteBox } from './QuoteBox/QuoteBox';
 
-import RamseyQuote from '../../../../assets/RamseyQuote1.jpg';
+import RamseyQuote from '../../../../assets/Ramsey/RamseyQuote1.jpg';
 
 export const Quote: React.FC = ({}) => {
     return (

@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './CarPhotosSlider.module.css';
 import { Switchers } from './Switchers/Switchers';
 
-import ActiveCarPhoto from '../../../../assets/DodgeChallenger.jpg'
+import ActiveCarPhoto from '../../../../assets/Ramsey/cars/DodgeChallenger.jpg'
 
 export const CarPhotosSlider: React.FC = () => {
 

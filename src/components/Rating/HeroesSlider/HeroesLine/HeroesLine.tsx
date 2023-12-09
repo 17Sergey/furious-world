@@ -3,9 +3,9 @@ import React from 'react';
 import styles from './HeroesLine.module.css';
 import { LineHero } from './LineHero/LineHero';
 
-import RamseyImg from '../../../../assets/Ramsey.webp';
-import TejImg from '../../../../assets/Tej.jpg';
-import RomanImg from '../../../../assets/Roman.jpg';
+import RamseyImg from '../../../../assets/Ramsey/Ramsey.webp';
+import TejImg from '../../../../assets/Tej/Tej.jpg';
+import RomanImg from '../../../../assets/Roman/Roman.jpg';
 
 export const HeroesLine: React.FC = () => {
     return (

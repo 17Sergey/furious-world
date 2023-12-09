@@ -12,7 +12,7 @@ import { setCurrentCharacter } from '../../redux/slices/currentCharacterSlice';
 export const Characters: React.FC = () => {
     const dispatch = useAppDispatch();
 
-    // Set up character
+    // Set up character(API call should be here)
     const { currentCharacterId, color: currentCharacterColor } = useAppSelector(state => state.currentCharacter);
 
     const characters = useAppSelector(state => state.charactersScreen.characters);

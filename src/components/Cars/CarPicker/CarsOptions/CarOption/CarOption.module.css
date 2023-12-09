@@ -1,6 +1,7 @@
 .car_option {
     margin-top: 30px;
     /* width: 315px; */
+    min-width: 400px;
     border: 3px solid #6F08A9;  
     padding: 20px 25px;
     cursor: pointer;

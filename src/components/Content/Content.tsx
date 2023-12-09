@@ -15,12 +15,12 @@ export const Content: React.FC = () => {
         <div>
             <Header />
             <Characters />
-            {/* <PersonalFile />
+            <PersonalFile />
             <Cars />
             <Rating />
             <BestQuote />
             <PilotKnowledge />
-            <Congratulations /> */}
+            <Congratulations />
         </div>
     );
 }
