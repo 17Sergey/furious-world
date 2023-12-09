@@ -10,7 +10,7 @@ type PersonalPhotoProps = {
 
 export const PersonalPhoto: React.FC<PersonalPhotoProps> = ({ photo }) => {
     return (
-        <div className="photo">
+        <div className={styles.photo}>
             <img src={photo} alt="character's image" />
         </div>
     );
