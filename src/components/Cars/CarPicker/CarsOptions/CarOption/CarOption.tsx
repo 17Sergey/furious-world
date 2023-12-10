@@ -1,23 +1,28 @@
 import React from 'react';
 
 import styles from './CarOption.module.css';
+import { useAppSelector } from '../../../../../redux/hooks/hooks';
 
 type CarOptionProps = {
     value: string;
     isActive?: boolean;
+    onClick: () => void;
 }
 
-export const CarOption: React.FC<CarOptionProps> = ({ value = "",  isActive = false }) => {
+export const CarOption: React.FC<CarOptionProps> = ({ value = "",  isActive = false, onClick }) => {
 
-    const COLOR = "#6F08A9";
-    const DEFAULT_COLOR = "#fff";
-
-    const background = isActive ? COLOR : DEFAULT_COLOR;    
-    const color = isActive ? DEFAULT_COLOR : "#000";
+    const color = useAppSelector(state => state.currentCharacter.color);
+    const default_color = "#fff";
+    
+    const background = isActive ? color : default_color;    
 
 
     return (
-        <div className={styles.car_option + " " + (isActive ? styles.active : styles.default) }>
+        <div 
+            style={{ backgroundColor: background, borderColor: color }}
+            className={styles.car_option + " " + (isActive ? styles.active : styles.default) } 
+            onClick={onClick}
+        >
             <div className={styles.car_name}>{value}</div>
         </div>
     );

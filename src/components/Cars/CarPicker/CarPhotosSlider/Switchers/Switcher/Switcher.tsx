@@ -1,16 +1,18 @@
 import React from 'react';
 
 import styles from './Switcher.module.css';
+import { useAppSelector } from '../../../../../../redux/hooks/hooks';
 
 type SwitcherProps = {
-    active?: boolean;
+    active: boolean;
+    onClick: () => void;
 }
-export const Switcher: React.FC<SwitcherProps> = ({ active = false }) => {
-    const COLOR = "#6F08A9";
-    const DEFAULT_COLOR = "#e5e5e5";
+export const Switcher: React.FC<SwitcherProps> = ({ active = false, onClick }) => {
+    const color = useAppSelector(state => state.currentCharacter.color);
+    const default_color = "#e5e5e5";
     return (
-        <div className={styles.for_padding}>
-            <div className={styles.switcher} style={{ backgroundColor: active ? COLOR : DEFAULT_COLOR }}></div>
+        <div className={styles.for_padding} onClick={onClick}>
+            <div className={styles.switcher} style={{ backgroundColor: active ? color : default_color }}></div>
         </div>
     );
 }

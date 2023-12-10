@@ -24,7 +24,7 @@ const characters = [
     {
         id: 4,
         name: "Tej Parker",
-        color: "#53a558",
+        color: "#51c459",
     },
 ];
 

@@ -1,10 +1,13 @@
 .car_option {
-    margin-top: 30px;
-    /* width: 315px; */
-    min-width: 400px;
-    border: 3px solid #6F08A9;  
+    width: 80%;
+    margin-left: auto;
     padding: 20px 25px;
     cursor: pointer;
+    transition: all .3s ease-out;    
+    border-width: 3px;
+    border-style: solid;
+    margin-top: 30px;
+    font-size: 24px;
 }
 
 .car_name {
@@ -12,14 +15,17 @@
     font-weight: bold;
 }
 
-.active {
+.car_name.active {
     color: #fff;
     font-size: 28px;
-    background-color: #6F08A9;
-    clip-path: polygon(23% 0, 100% 0%, 100% 100%, 0% 100%);
-    padding-left: 125px;
-    align-self: flex-start;
-    width: 555px;
+}
+
+.car_option.active {
+    width: 100%;
+    color: #fff;
+    font-size: 28px;
+    clip-path: polygon(18% 0, 100% 0%, 100% 100%, 0% 100%);
+    padding-left: calc(18%);
 }
 
 .default {

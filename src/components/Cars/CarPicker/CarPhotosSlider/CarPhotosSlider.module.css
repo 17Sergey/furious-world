@@ -1,6 +1,11 @@
 .car_photo{
     display: block;
-    max-width: 550px; 
+    width: 550px; 
+    height: 450px;
     /* by default */
     border: 10px solid #6F08A9;
+}
+
+.car_photos_slider {
+    transition: all .3s ease-out;
 }

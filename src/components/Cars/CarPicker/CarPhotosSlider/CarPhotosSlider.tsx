@@ -3,20 +3,26 @@ import React from 'react';
 import styles from './CarPhotosSlider.module.css';
 import { Switchers } from './Switchers/Switchers';
 
-import ActiveCarPhoto from '../../../../assets/Ramsey/cars/DodgeChallenger.jpg'
+import { useAppSelector } from '../../../../redux/hooks/hooks';
+import { CharacterActiveCarType } from '../../../../redux/slices/carsSlice';
 
-export const CarPhotosSlider: React.FC = () => {
+type CarPhotosSliderProps = {
+    car: CharacterActiveCarType;
+}
 
-    const COLOR = "#6F08A9";
+export const CarPhotosSlider: React.FC<CarPhotosSliderProps> = ({ car }) => {
+
+    const color = useAppSelector(state => state.currentCharacter.color);
+    
     return (
-        <div className="car_photos_slider">
+        <div className={styles.car_photos_slider}>
             <img
-                src={ActiveCarPhoto}
-                style={{ borderColor: COLOR }}
+                src={car.activeImage}
+                style={{ borderColor: color }}
                 className={styles.car_photo}
                 alt="car-photo" 
             />
-            <Switchers />
+            <Switchers carImages={car.carImages} activeCarImage={car.activeImage}/>
         </div>
     );
 }

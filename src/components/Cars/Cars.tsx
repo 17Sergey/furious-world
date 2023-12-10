@@ -12,7 +12,7 @@ export const Cars: React.FC = () => {
                 <Heading value={"Cars"} type={"right"}/>
                 <CarPicker />
                 <div className={styles.text_centered}>
-                    A person’s car has always been important in the Furious world. They travel with cars, rest with cars, struggle with cars. Are these guys in their cars? If yes, you’re going to lose.
+                    A person’s car has always been important in the Furious world. They travel with cars, rest with cars, fight with cars. Are these guys in their cars? If yes, you’re going to lose.
                 </div>
             </Container>
         </div>
