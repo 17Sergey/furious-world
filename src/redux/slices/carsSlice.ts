@@ -73,36 +73,36 @@ const characters = [
         cars: [
             {
                 id: 0,
-                carName: "1970 Dodge Charger R/T",
+                carName: "1994 Toyota Supra Mark IV",
                 carImages: [
-                    "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Dominic/Cars/Dodge%20Charger%20RT-8/Dodge%20Charger%20RT-8_1.webp",
+                    "https://github.com/17Sergey/furious-world/blob/main/src/assets/Brian/Cars/1994%20Toyota%20Supra%20Mark%20IV/1994%20Toyota%20Supra%20Mark%20IV_1.jpg?raw=true",
                     "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Dominic/Cars/Dodge%20Charger%20RT-8/Dodge%20Charger%20RT-8_2.webp",
                     "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Cars/Dodge%20Charger%20RT-8/Dodge%20Charger%20RT-8_3.jpg?raw=true",
                 ],
             },
             {
                 id: 1,
-                carName: "1970 Chevrolet Chevelle SS",
+                carName: "1999 Nissan Skyline R34 GT-R",
                 carImages: [
-                    "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Cars/Chevrolet%20Chevelle/Chevrolet%20Chevelle1.jpg?raw=true",
+                    "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Brian/Cars/1999%20Nissan%20Skyline%20R34%20GT-R/1999%20Nissan%20Skyline%20R34%20GT-R_1.webp",
                     "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Dominic/Cars/Dodge%20Charger%20RT-8/Dodge%20Charger%20RT-8_2.webp",
                     "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Cars/Dodge%20Charger%20RT-8/Dodge%20Charger%20RT-8_3.jpg?raw=true",
                 ],
             },
             {
                 id: 2,
-                carName: "2009 Dodge Challenger SRT-8",
+                carName: "2010 Dodge Charger SRT-8",
                 carImages: [
-                    "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Cars/Dodge%20Challenger%20SRT-8/DodgeChallenger1.jpg?raw=true",
+                    "https://github.com/17Sergey/furious-world/blob/main/src/assets/Brian/Cars/2010%20Dodge%20Charger%20SRT-8/2010%20Dodge%20Charger%20SRT-8_1.jpg?raw=true",
                     "https://raw.githubusercontent.com/17Sergey/furious-world/main/src/assets/Dominic/Cars/Dodge%20Charger%20RT-8/Dodge%20Charger%20RT-8_2.webp",
                     "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Cars/Dodge%20Charger%20RT-8/Dodge%20Charger%20RT-8_3.jpg?raw=true",
                 ],
             },
             {
                 id: 3,
-                carName: "2021 Dodge Charger SRT Hellcat Redeye Widebody",
+                carName: "2012 Subaru Impreza WRX STi GH",
                 carImages: [
-                    "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Cars/Dodge%20Charger%20SRT%20Hellcat/Dodge%20Charger%20SRT%20Hellcat1.jpg?raw=true",
+                    "https://github.com/17Sergey/furious-world/blob/main/src/assets/Brian/Cars/2012%20Subaru%20Impreza%20WRX%20STi%20GH/2012%20Subaru%20Impreza%20WRX%20STi%20GH_1.jpg?raw=true",
                     "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Cars/Dodge%20Charger%20SRT%20Hellcat/Dodge%20Charger%20SRT%20Hellcat2.jpg?raw=true",
                     "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Cars/Dodge%20Charger%20RT-8/Dodge%20Charger%20RT-8_3.jpg?raw=true",
                 ],

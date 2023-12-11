@@ -1,6 +1,5 @@
 .car_option {
-    width: 80%;
-    margin-left: auto;
+    max-width: 550px;
     padding: 20px 25px;
     cursor: pointer;
     transition: all .3s ease-out;    
@@ -15,13 +14,13 @@
     font-weight: bold;
 }
 
-.car_name.active {
+.active .car_name {
     color: #fff;
     font-size: 28px;
+    transition: .1s all ease-out;
 }
 
 .car_option.active {
-    width: 100%;
     color: #fff;
     font-size: 28px;
     clip-path: polygon(18% 0, 100% 0%, 100% 100%, 0% 100%);

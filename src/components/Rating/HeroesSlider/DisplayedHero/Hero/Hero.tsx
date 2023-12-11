@@ -5,11 +5,16 @@ import { HeroImage } from './HeroImage/HeroImage';
 import { HeroRating } from './HeroRating/HeroRating';
 
 import RamseyImg from '../../../../../assets/Ramsey/Ramsey.webp';
+import { HeroType } from '../../../../../redux/slices/ratingSlice';
 
-export const Hero: React.FC = () => {
+type HeroProps = {
+    activeHero: HeroType;
+}
+
+export const Hero: React.FC<HeroProps> = ({ activeHero }) => {
     return (
         <div className={styles.hero}>
-            <HeroImage className={styles.big} imgSource={RamseyImg} />
+            <HeroImage className={styles.big} imgSource={activeHero.photo} />
             <HeroRating />
         </div>
     );

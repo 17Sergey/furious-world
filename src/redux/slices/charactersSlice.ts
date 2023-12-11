@@ -22,7 +22,7 @@ const charactersSlice = createSlice({
             },
             {
                 id: 1,
-                name: "Brian O'Connor",
+                name: "Brian O'Conner",
                 photo: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Brian/Brian.jpg?raw=true",
             },
             {
