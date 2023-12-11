@@ -30,12 +30,12 @@ const characters = [
             {
                 id: 0,
                 text: "I Owe You A Ten-Second Car.",
-                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Quotes/1.jpg?raw=true"
+                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Brian/Quotes/1.jpg?raw=true"
             },
             {
                 id: 1,
                 text: "Dom, Cars Don't Fly. Cars Don't Fly!",
-                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Quotes/2.jpg?raw=true"
+                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Brian/Quotes/2.jpg?raw=true"
             },
         ],  
     },
@@ -46,7 +46,7 @@ const characters = [
             {
                 id: 0,
                 text: "Now, it was crappy yesterday, it was crappy the day before. And guess what? It hasn't changed.",
-                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Quotes/1.jpg?raw=true"
+                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Mia/Quotes/1.jpg?raw=true"
             },
         ],  
     },
@@ -57,7 +57,7 @@ const characters = [
             {
                 id: 0,
                 text: "Life is binary: zero and ones. Only two things keep a group like this together; fear or loyalty - and I don't see a drop of fear amongst you guys.",
-                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Quotes/1.jpg?raw=true"
+                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Ramsey/RamseyQuote1.jpg?raw=true"
             },
         ],  
     },
@@ -68,12 +68,12 @@ const characters = [
             {
                 id: 0,
                 text: "Guys we gotta come up with another plan.They got a tank",
-                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Quotes/1.jpg?raw=true"
+                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Tej/Quotes/1.jpg?raw=true"
             },
             {
                 id: 1,
                 text: "What's The Matter Roman? Forgot The Snow Tires?",
-                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Quotes/1.jpg?raw=true"
+                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Tej/Quotes/2.jpg?raw=true"
             },
         ],  
     },

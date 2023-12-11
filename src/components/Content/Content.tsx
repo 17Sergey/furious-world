@@ -19,8 +19,6 @@ export const Content: React.FC = () => {
             <Cars />
             <Rating />
             <BestQuote />
-            <PilotKnowledge />
-            <Congratulations />
         </div>
     );
 }

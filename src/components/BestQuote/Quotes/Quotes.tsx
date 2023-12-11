@@ -24,7 +24,7 @@ export const Quotes: React.FC<QuotesProps> = ({ }) => {
     }
 
     return (
-        <div className="quotes">
+        <div className={styles.quotes}>
             <Quote />
             <SliderDots arrayToMap={quotes} onSliderDotClick={changeQuote} checkActive={checkActive} />
         </div>
