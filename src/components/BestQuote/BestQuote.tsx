@@ -4,15 +4,20 @@ import styles from './BestQuote.module.css';
 import { Container } from '../common/Container/Container';
 import { Heading } from '../common/Heading/Heading';
 import { Quotes } from './Quotes/Quotes';
-import { useAppSelector } from '../../redux/hooks/hooks';
+import { useAppDispatch, useAppSelector } from '../../redux/hooks/hooks';
+import { setBestQuoteCurrentCharacter } from '../../redux/slices/bestQuoteSlice';
 
 export const BestQuote: React.FC = ({}) => {
-    const color = useAppSelector(state => state.currentCharacter.color);
+    const dispatch = useAppDispatch();
+
+    const { color, currentCharacterId } = useAppSelector(state => state.currentCharacter);
+    dispatch(setBestQuoteCurrentCharacter(currentCharacterId));
+    const { shapeColor } = useAppSelector(state => state.bestQuoteScreen.currentCharacter);
 
     return (
         <div className={styles.best_quote} style={{backgroundColor: color}}>
             <Container>
-                <Heading value={"Best quote"} type={"right"} className={styles.heading} shapeColor={"#FF7750"} />
+                <Heading value={"Best quote"} type={"right"} className={styles.heading} shapeColor={shapeColor} />
                 <Quotes />
             </Container>
         </div>

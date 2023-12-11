@@ -4,6 +4,7 @@ import personalFileReducer from './slices/personalFileSlice';
 import charactersReducer from './slices/charactersSlice';
 import carsReducer from './slices/carsSlice';
 import ratingReducer from './slices/ratingSlice';
+import bestQuoteReducer from './slices/bestQuoteSlice';
 
 const rootReducer = combineReducers({
     currentCharacter: currentCharacterReducer,
@@ -11,6 +12,7 @@ const rootReducer = combineReducers({
     personalFileScreen: personalFileReducer,
     carsScreen: carsReducer,
     ratingScreen: ratingReducer,
+    bestQuoteScreen: bestQuoteReducer,
 })
 
 export const store = configureStore({

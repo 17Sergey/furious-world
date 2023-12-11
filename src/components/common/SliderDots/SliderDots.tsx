@@ -5,19 +5,20 @@ import styles from './SliderDots.module.css';
 
 type SliderDotsProps = {
     arrayToMap: any[];
-    onSliderDotClick: (id: number) => void;
-    checkActive: (charactedId: number) => boolean;
+    onSliderDotClick: (quoteNumber: number) => void;
+    checkActive: (quoteNumber: number) => boolean;
 }
 
 export const SliderDots: React.FC<SliderDotsProps> = ({ arrayToMap, onSliderDotClick, checkActive }) => {
 
     const createDots = (): Array<ReactNode> => {
-        const dots = arrayToMap.map(item =>
-            <SliderDot
+        const dots = arrayToMap.map(item => { 
+            return <SliderDot
                 key={item.id}
                 isActive={checkActive(item.id)}
                 onClick={() => onSliderDotClick(item.id)}
             />
+        }
         );
         return dots;
     }
