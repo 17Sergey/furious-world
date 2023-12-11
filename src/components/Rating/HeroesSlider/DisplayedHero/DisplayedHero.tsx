@@ -4,27 +4,15 @@ import styles from './DisplayedHero.module.css';
 import { Arrow } from '../../../common/Arrow/Arrow';
 import { Hero } from './Hero/Hero';
 import { useAppDispatch, useAppSelector } from '../../../../redux/hooks/hooks';
-import { setActiveHero } from '../../../../redux/slices/ratingSlice';
+import { HeroType, setActiveHero } from '../../../../redux/slices/ratingSlice';
 
-export const DisplayedHero: React.FC = () => {
-    const dispatch = useAppDispatch();
+type DisplayedHeroProps = {
+    activeHero: HeroType;
+    showPreviousHero: () => void;
+    showNextHero: () => void;
+}
 
-    const currentHeroId = useAppSelector(state => state.currentCharacter.currentCharacterId);
-
-    // Check if component renders for first time and needs initial set to hero
-    const isInitialHeroSet = useAppSelector(state => state.ratingScreen.isInitialHeroSet);
-    if (!isInitialHeroSet) dispatch(setActiveHero(currentHeroId));
-
-    const activeHero = useAppSelector(state => state.ratingScreen.activeHero);
-    // debugger;   
-
-    const showPreviousHero = () => {
-        dispatch(setActiveHero(activeHero.id - 1));
-    }
-
-    const showNextHero = () => {
-        dispatch(setActiveHero(activeHero.id + 1));
-    }
+export const DisplayedHero: React.FC<DisplayedHeroProps> = ({ activeHero, showPreviousHero, showNextHero }) => {
 
     return (
         <div className={styles.wrapper}>

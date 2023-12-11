@@ -15,7 +15,7 @@ export const Hero: React.FC<HeroProps> = ({ activeHero }) => {
     return (
         <div className={styles.hero}>
             <HeroImage className={styles.big} imgSource={activeHero.photo} />
-            <HeroRating />
+            <HeroRating rating={activeHero.rating}/>
         </div>
     );
 }

@@ -11,6 +11,7 @@ type HeadingProps = {
     value: string;
     className?: string;
     type?: string;
+    shapeColor?: string;
 }
 
 const findJustify = (type: string): string => {
@@ -30,9 +31,11 @@ const findJustify = (type: string): string => {
     }
 }
 
-export const Heading: React.FC<HeadingProps> = ({ value, className = "", type = "left" }) => {
+export const Heading: React.FC<HeadingProps> = ({ value, className = "", type = "left", shapeColor }) => {
+    let { color } = useAppSelector(state => state.currentCharacter);
 
-    const { color: shapeColor } = useAppSelector(state => state.currentCharacter);
+    // If shapeColor is passed in props
+    if (shapeColor) color = shapeColor;
 
     const justifyContentValue = findJustify(type);
     
@@ -44,8 +47,8 @@ export const Heading: React.FC<HeadingProps> = ({ value, className = "", type = 
                 <h1 className={`heading ${styles.heading} ${className}`}>{value}</h1>
 
                 <SvgLoader path={Shape} className={styles.shape}>
-                    <SvgProxy selector="rect" fill={shapeColor} />
-                    <SvgProxy selector="ellipse" fill={shapeColor} />
+                    <SvgProxy selector="rect" fill={color} />
+                    <SvgProxy selector="ellipse" fill={color} />
                 </SvgLoader>
 
             </div>

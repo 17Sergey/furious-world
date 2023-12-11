@@ -1,6 +1,7 @@
 .small {
     width: 180px;
     height: 230px;
+    cursor: pointer;  
 }
 
 .big {

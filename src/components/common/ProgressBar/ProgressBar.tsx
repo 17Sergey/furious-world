@@ -9,6 +9,7 @@ type ProgressBarProps = {
 }
 
 export const ProgressBar: React.FC<ProgressBarProps> = ( {value, className, color }) => {
+    if (value === 100) value = 102; 
     return (
         <div className={styles.bar + " " + className}>
             <div className={styles.colored_bar} style={{ backgroundColor: color, width: `${value}%` }}></div>

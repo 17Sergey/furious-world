@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import styles from './HeroRating.module.css';
 import { RatingCritery } from './RatingCritery/RatingCritery';
+import { RatingType } from '../../../../../../redux/slices/ratingSlice';
 
-export const HeroRating: React.FC = () => {
+
+type HeroRatingProps = {
+    rating: RatingType;
+}
+
+export const HeroRating: React.FC<HeroRatingProps> = ({ rating }) => {
+
+    const createRatingCriteries = (): Array<ReactNode> => {
+        return rating.map(item => <RatingCritery name={item.caption} value={item.value} color={item.color} />);
+    }
     return (
         <div className={styles.hero_rating}>
-            <RatingCritery name={"Speed:"} value={30} color={"#FF4365"} />
-            <RatingCritery name={"Leadership:"} value={38} color={"#03CEA4"}/>
-            <RatingCritery name={"Intelligence:"} value={95} color={"#57E2E5"}/>
-            <RatingCritery name={"Fighting skills:"} value={55} color={"#0496FF"} />
+            {createRatingCriteries()}
         </div>
     );
 }
