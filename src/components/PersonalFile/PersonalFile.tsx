@@ -10,7 +10,7 @@ export const PersonalFile: React.FC = () => {
             <Container>
                 <Heading value={"Personal file"} />
                 <CharacterInfo />
-            </Container>
+            </Container>    
         </div>
     );
 }

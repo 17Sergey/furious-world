@@ -8,3 +8,10 @@
     border-radius: 15px;
     cursor: pointer;
 }
+
+@media (max-width: 400px) {
+    .btn {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+}

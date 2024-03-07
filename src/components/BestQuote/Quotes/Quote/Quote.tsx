@@ -9,7 +9,7 @@ export const Quote: React.FC = ({}) => {
     const {text, image} = useAppSelector(state => state.bestQuoteScreen.activeQuote);
     return (
         <div className={styles.quote_item}>
-            <QuoteBox text={text}/>
+            <QuoteBox text={text}/> 
             <div className={styles.image}>
                 <img src={image} alt="character-image" />
             </div>

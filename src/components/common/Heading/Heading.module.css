@@ -19,3 +19,13 @@
     top: 16px;
     left: 0;
 }
+
+@media (max-width: 400px) {
+    .heading {
+        margin-left: 40px;  
+    }
+    .shape {
+        width: 70px;
+        top: 2px;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from './AnswerOptions.module.css';
+// import styles from './AnswerOptions.module.css';
 import { AnswerOption } from './AnswerOption/AnswerOption';
 
 export const AnswerOptions: React.FC = ({}) => {

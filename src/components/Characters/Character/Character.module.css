@@ -14,3 +14,10 @@
     height: 565px;   
     margin-bottom: 10px;
 }
+
+@media (max-width: 400px) {
+    .image {
+        max-width: 250px;
+        height: auto;
+    }
+}

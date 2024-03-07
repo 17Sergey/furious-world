@@ -20,3 +20,9 @@
     /* margin-top: 3px; */
     margin-left: 15px;
 }
+
+@media (max-width: 400px) {
+    .critery_heading {
+        font-size: 22px;
+    }
+}

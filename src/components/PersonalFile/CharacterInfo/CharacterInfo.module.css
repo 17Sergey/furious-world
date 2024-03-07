@@ -2,3 +2,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 400px) {
+    .character_info {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

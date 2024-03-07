@@ -4,7 +4,6 @@ import styles from './Hero.module.css';
 import { HeroImage } from './HeroImage/HeroImage';
 import { HeroRating } from './HeroRating/HeroRating';
 
-import RamseyImg from '../../../../../assets/Ramsey/Ramsey.webp';
 import { HeroType } from '../../../../../redux/slices/ratingSlice';
 
 type HeroProps = {

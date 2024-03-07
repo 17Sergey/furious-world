@@ -2,3 +2,9 @@
     max-width: 565px;
     margin-top: 45px;
 }
+
+@media (max-width: 400px) {
+    .additional {
+        margin-bottom: 30px;
+    }
+}

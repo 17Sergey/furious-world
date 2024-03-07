@@ -4,3 +4,9 @@
     justify-content: space-around;
     align-items: center;
 }
+
+@media (max-width: 400px) {
+    .line {
+        margin-top: 100px;
+    }
+}

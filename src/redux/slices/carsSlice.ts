@@ -19,10 +19,6 @@ export type CharacterWithCarType = {
     cars: Array<CharacterCarType>;
 }
 
-export type CharacterCarsState = {
-    activeCar: CharacterActiveCarType;
-    characters: Array<CharacterWithCarType>;
-}
 
 const characters = [
     {
@@ -237,9 +233,14 @@ const characters = [
     },
 ]
 
+export type CharacterCarsState = {
+    activeCar: CharacterActiveCarType;
+    characters: Array<CharacterWithCarType>;
+}
+
 const customInitialState: CharacterCarsState = {
     activeCar: { ...characters[0].cars[0], activeImage: characters[0].cars[0].carImages[0] },
-    characters
+    characters,
 }
 
 

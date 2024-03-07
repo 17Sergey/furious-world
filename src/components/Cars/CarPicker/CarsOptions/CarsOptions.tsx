@@ -3,7 +3,7 @@ import React, {ReactNode} from 'react'
 import styles from './CarsOptions.module.css';
 import { CarOption } from './CarOption/CarOption';
 import { CharacterCarType, CharacterWithCarType, changeActiveCar } from '../../../../redux/slices/carsSlice';
-import { useAppDispatch, useAppSelector } from '../../../../redux/hooks/hooks';
+import { useAppDispatch } from '../../../../redux/hooks/hooks';
 
 type CarsOptionsProps = {
     characterInfo: CharacterWithCarType;

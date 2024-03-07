@@ -3,8 +3,7 @@ import React from 'react';
 import styles from './DisplayedHero.module.css';
 import { Arrow } from '../../../common/Arrow/Arrow';
 import { Hero } from './Hero/Hero';
-import { useAppDispatch, useAppSelector } from '../../../../redux/hooks/hooks';
-import { HeroType, setActiveHero } from '../../../../redux/slices/ratingSlice';
+import { HeroType } from '../../../../redux/slices/ratingSlice';
 
 type DisplayedHeroProps = {
     activeHero: HeroType;

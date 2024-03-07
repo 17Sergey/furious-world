@@ -3,11 +3,9 @@ import React from 'react';
 import styles from './CarPicker.module.css';
 import { CarPhotosSlider } from './CarPhotosSlider/CarPhotosSlider';
 import { CarsOptions } from './CarsOptions/CarsOptions';
-import { useAppDispatch, useAppSelector } from '../../../redux/hooks/hooks';
-import { changeActiveCar } from '../../../redux/slices/carsSlice';
+import { useAppSelector } from '../../../redux/hooks/hooks';
 
 export const CarPicker: React.FC = () => {
-    const dispatch = useAppDispatch();
     const { currentCharacterId } = useAppSelector(state => state.currentCharacter);
     const characterInfo = useAppSelector(state => state.carsScreen.characters[currentCharacterId]);
     const activeCar = useAppSelector(state => state.carsScreen.activeCar);

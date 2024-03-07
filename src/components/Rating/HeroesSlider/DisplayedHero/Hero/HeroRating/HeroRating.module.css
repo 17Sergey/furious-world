@@ -2,3 +2,12 @@
     margin-left: 100px;
     flex-basis: 300px;
 }
+
+@media (max-width: 400px) {
+    .hero_rating {
+        margin-left: 0;
+        order: -1;
+        margin-bottom: 30px;
+        width: 300px;
+    }
+}

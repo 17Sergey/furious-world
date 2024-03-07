@@ -10,13 +10,17 @@
     top: 45%;
 }
 .left {
-    /* left: 15px; */
-    left: 0;
+    left: -5px;
     transform: rotate(90deg);
 }
 
 .right {
-    /* right: 15px; */
-    right: 0;
+    right: -5px;
     transform: rotate(-90deg);
+}
+
+@media (max-width: 400px) {
+    .arrow {
+        top: 70%;
+    }
 }

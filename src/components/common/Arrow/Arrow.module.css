@@ -2,6 +2,13 @@
     cursor: pointer;
 }
 
-.arrow {
+.wrapper .arrow {
     color: #000;
+}
+
+@media (max-width: 400px) {
+    .wrapper .arrow {
+        width: 25px;
+        height: 25px;
+    }
 }

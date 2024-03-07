@@ -16,3 +16,21 @@ div.progressBar {
     height: 20px;
     border: 1px solid #000;
 }
+
+@media (max-width: 400px) {
+    .rating_critery {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 320px;
+    }
+    .critery_heading {
+        width: 40%;
+        font-size: 24px;
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+    div.progressBar {
+        width: 60%;
+    }
+}

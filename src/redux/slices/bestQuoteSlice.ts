@@ -30,7 +30,7 @@ const characters = [
             {
                 id: 0,
                 text: "I Owe You A Ten-Second Car.",
-                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Brian/Quotes/1.jpg?raw=true"
+                image: "https://github.com/17Sergey/furious-world/blob/main/src/assets/Dominic/Quotes/1.jpg?raw=true"
             },
             {
                 id: 1,

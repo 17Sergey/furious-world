@@ -9,6 +9,7 @@ export const Rating: React.FC = () => {
     return (
         <div className={styles.rating}>
             <Container>
+                <a id="rating"></a>
                 <Heading value={"Rating"} />
                 <HeroesSlider />
             </Container>

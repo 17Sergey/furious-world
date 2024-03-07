@@ -9,3 +9,13 @@
     width: 430px;
     height: 600px;
 }
+
+@media (max-width: 400px) {
+    .hero {
+        flex-direction: column;
+    }
+    .big {
+        width: 250px;
+        height: 350px;
+    }
+}

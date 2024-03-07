@@ -27,3 +27,18 @@
     margin-top: 10px;
     text-align: center;
 }
+
+@media (max-width: 400px) {
+    .active .name {
+        font-size: 28px;
+    }
+    .small {
+        width: 120px;
+        height: 150px;
+    }
+    
+    .big {
+        width: 180px;
+        height: 220px;
+    }
+}

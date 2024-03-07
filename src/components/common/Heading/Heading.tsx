@@ -5,6 +5,7 @@ import { useAppSelector } from '../../../redux/hooks/hooks';
 import styles from './Heading.module.css';
 import Shape from '../../../assets/common/HeadingShape.svg';
 
+// @ts-ignore
 import { SvgLoader, SvgProxy } from "react-svgmt";
 
 type HeadingProps = {

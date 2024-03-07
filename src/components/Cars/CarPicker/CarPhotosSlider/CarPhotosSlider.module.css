@@ -1,5 +1,6 @@
 .car_photo{
     display: block;
+    box-sizing: border-box;
     width: 550px; 
     height: 450px;
     /* by default */
@@ -8,4 +9,11 @@
 
 .car_photos_slider {
     transition: all .3s ease-out;
+}
+
+@media (max-width: 400px) {
+    .car_photo {
+        max-width: 100%;
+        height: auto;
+    }
 }

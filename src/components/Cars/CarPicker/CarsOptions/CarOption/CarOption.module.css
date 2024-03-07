@@ -22,7 +22,6 @@
 
 .car_option.active {
     color: #fff;
-    font-size: 28px;
     clip-path: polygon(18% 0, 100% 0%, 100% 100%, 0% 100%);
     padding-left: calc(18%);
 }
@@ -30,4 +29,16 @@
 .default {
     color: #000;
     background-color: #fff;
+}
+
+@media (max-width: 400px) {
+    .car_option {
+        padding-right: 10px;    
+    }
+    .car_name {
+        font-size: 20px;
+    }
+    .active .car_name {
+        font-size: 24px;
+    }
 }
