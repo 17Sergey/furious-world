@@ -4,4 +4,4 @@
 [Furious world](https://furiousworld.netlify.app/)
 
 ## Run manually:
-After downloading, go to project folder anf run ```npm run dev```. The website will be on ```http://localhost:3000```.
+After downloading, go to project folder and run ```npm run dev```. The website will be on ```http://localhost:3000```.
